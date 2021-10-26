@@ -1,9 +1,3 @@
-﻿ELSI Export
-
-National Center for Education Statistics - http://nces.ed.gov/ccd/elsi/
-
-This is a District based table with the following filters applied: State(s) (All Years): LOUISIANA
-
 Agency Name,State Name [District] Latest available year,State Name [District] 2016-17,Agency Name [District] 2016-17,Agency Type [District] 2016-17,Total Students All Grades (Includes AE) [District] 2016-17,Male Students [District] 2016-17,Female Students [District] 2016-17,American Indian/Alaska Native - male [District] 2016-17,American Indian/Alaska Native - female [District] 2016-17,Asian or Asian/Pacific Islander - male [District] 2016-17,Asian or Asian/Pacific Islander - female [District] 2016-17,Hispanic - male [District] 2016-17,Hispanic - female [District] 2016-17,Black or African American - male [District] 2016-17,Black or African American - female [District] 2016-17,White - male [District] 2016-17,White - female [District] 2016-17,Nat. Hawaiian or Other Pacific Isl. - male [District] 2016-17,Nat. Hawaiian or Other Pacific Isl. - female [District] 2016-17,Two or More Races - male [District] 2016-17,Two or More Races - female [District] 2016-17,Full-Time Equivalent (FTE) Teachers [District] 2016-17,Pupil/Teacher Ratio [District] 2016-17,Kindergarten Teachers [District] 2016-17,Elementary Teachers [District] 2016-17,Secondary Teachers [District] 2016-17,Total Staff [District] 2016-17,Total General Revenue (TOTALREV) [District Finance] 2016-17,Total Revenue - Federal Sources (TFEDREV) [District Finance] 2016-17,Total Revenue - State Sources (TSTREV) [District Finance] 2016-17,Total Revenue - Local Sources (TLOCREV) [District Finance] 2016-17,Total Revenue (TOTALREV) per Pupil (V33) [District Finance] 2016-17,Instruction Expenditures - Total (E13) [District Finance] 2016-17,Salary - Instruction Expenditures (Z33) [District Finance] 2016-17
 A.E. PHILLIPS LABORATORY SCHOOL,Louisiana,LOUISIANA,A.E. Phillips Laboratory School,8-Other education agencies,394,194,195,–,–,5,5,3,1,41,41,148,149,–,–,–,1,22.00,17.91,2.50,18.50,1.00,25.00,–,–,–,–,="0",–,–
 ABRAMSON SCI ACADEMY,LOUISIANA,LOUISIANA,RSD-Collegiate Academies,7-Independent Charter District,561,307,253,1,–,21,21,5,2,268,221,8,5,1,2,3,3,36.99,15.17,†,†,36.99,83.74,8252000,1397000,3605000,3250000,14709,3473000,2588000
@@ -190,10 +184,3 @@ WILLIAM J. FISCHER ACCELERATED ACADEMY,LOUISIANA,LOUISIANA,William J. Fischer Ac
 WILLOW CHARTER ACADEMY,LOUISIANA,LOUISIANA,Willow Charter Academy,7-Independent Charter District,475,248,220,1,–,–,–,1,3,235,216,14,5,–,–,–,–,41.10,11.56,2.26,29.66,9.18,75.47,6541000,678000,1939000,3924000,13771,2595000,1705000
 WINN PARISH,Louisiana,LOUISIANA,Winn Parish,1-Regular local school district that is NOT a component of a supervisory union,2393,1191,1200,3,2,2,2,32,29,419,432,717,722,–,–,19,14,183.36,13.05,9.64,91.11,76.76,407.57,27290000,3258000,16750000,7282000,11404,13858000,8500000
 ZACHARY COMMUNITY SCHOOL DISTRICT,Louisiana,LOUISIANA,Zachary Community School District,1-Regular local school district that is NOT a component of a supervisory union,5417,2741,2674,1,1,25,37,44,53,1336,1301,1259,1208,–,–,77,75,363.68,14.89,16.00,232.12,93.56,585.36,68430000,3672000,31953000,32805000,12632,32298000,21322000
-
-
-Data Source: U.S. Department of Education National Center for Education Statistics Common Core of Data (CCD) "Local Education Agency (School District) Universe Survey" 2016-17 v.2a  2019-20 v.1a; "School District Finance Survey (F-33)" 2016-17 (FY 2017) v.1a.
-
-† indicates that the data are not applicable.
-– indicates that the data are missing.
-‡ indicates that the data do not meet NCES data quality standards.
