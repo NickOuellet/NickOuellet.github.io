@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <origin/>
+                <pubdate>20210416</pubdate>
+                <title>Unified School District Boundaries for the State of New Jersey, NAD83 NJ State Plane feet</title>
+                <edition>Revised from edition of 2019-03-06</edition>
+                <geoform>vector digital data</geoform>
+                <pubinfo>
+                    <pubplace/>
+                    <publish>NJ Office of Information Technology, Office of GIS (NJOGIS)</publish>
+                </pubinfo>
+                <onlink>https://njogis-newjersey.opendata.arcgis.com/datasets/school-districts-unified-for-new-jersey</onlink>
+                <onlink>https://newjersey.maps.arcgis.com/home/item.html?id=ca144194df66491d83b8f8bf338e0172</onlink>
+                <onlink>https://njgin.nj.gov/</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>This version of the unified school district layer, representing districts that provide education to all grade/age levels, uses high-quality base map spatial data published by the State of New Jersey. The U.S. Census Bureau's latest school district boundary data (TIGER) were used for guidance in establishing which municipalities to include in each district. The district boundaries were created using updated NJ Municipal Boundaries (Govt_admin_municipal_bnd). In addition, school district boundaries in two areas, on and near military bases, were edited to reflect special arrangements made for students residing in base housing. See Supplemental Information for details. By U.S. Census Bureau definition, school districts are single-purpose administrative units within which local officials provide, or pay other districts to provide, public educational services for the area's residents. The Census Bureau obtains the boundaries, names, local education agency codes, grade ranges, and school district levels for school districts from State officials for the primary purpose of providing the U.S. Department of Education with estimates of the number of children in poverty within each school district. This information serves as the basis for the Department of Education to determine the annual allocation of Title I funding to States and school districts. In 2015 NJ Department of Education (NJDOE) corrected grade ranges and district types according to financial obligation, not the provision of educational services. NJDOE used set of grades, based on financial responsibility, to assign the data for each child to exactly one school district, except for districts covering Joint Base McGuire-Dix-Lakehurst in Burlington County. See Supplemental Information and Process Steps for details. This data set normally is updated annually, with updated school district information provided by the NJ Department of Education (NJDOE).</abstract>
+            <purpose>This revised version of the financial responsibility school district boundaries was created to overlay properly with high-quality vector municipal boundary data published by the State of New Jersey.</purpose>
+            <supplinf>In two areas of New Jersey, public school district boundaries for financial responsibility do not follow municipal boundaries due to special legislation or to signed agreement among the military base administration, school districts, and NJ Department of Education.  
+
+In Monmouth County, public education financial responsibility for youngsters who reside in housing for Naval Weapons Station (NWS) Earle is borne by the Colts Neck (Elementary) and by Freehold Regional High School District (Secondary). Municipalities affected by this arrangement are Tinton Falls, Colts Neck, Howell Township, and Wall Township, although no Station housing is located in Howell or Wall Townships. The Elementary designation was changed from Tinton Falls to Colts Neck in FY 2019.  
+
+In Burlington County, a special arrangement with Joint Base McGuire-Dix-Lakehurst (Joint Base MDL), allows family choice, once for each student, to be in North Hanover Township School District (Elementary) and  Northern Burlington County Regional School District (Secondary), or to be in Pemberton Township Schools (Unified). This unusual geography is accomodated in NJOGIS-published data by geographically-overlapping districts; the Base area is included in all three of the districts mentioned, and is excluded from the New Hanover and Springfield Township districts.  
+
+The special situation for Joint Base MDL is accommodated in data submitted to the U.S. Census Bureau, for incorporation in TIGER data, by a unified Pseudo-district. The Joint Base MDL area is excluded from all the other affected districts.  
+
+Municipalities affected by the Joint Base MDL arrangement are New Hanover, North Hanover, Pemberton Township, Springfield Township, and Wrightstown.</supplinf>
+        </descript>
+        <timeperd>
+            <timeinfo>
+                <sngdate>
+                    <caldate>20210406</caldate>
+                </sngdate>
+            </timeinfo>
+            <current>Ground condition as reported by NJDOE</current>
+        </timeperd>
+        <status>
+            <progress>Complete</progress>
+            <update>Annually</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-75.587089</westbc>
+                <eastbc>-73.899178</eastbc>
+                <northbc>41.357794</northbc>
+                <southbc>38.927287</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>NJGIN</themekt>
+                <themekey>njfw_boundaries</themekey>
+            </theme>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>Unified School District</themekey>
+                <themekey>School District</themekey>
+            </theme>
+            <theme>
+                <themekt>ISO 19115 Topic Categories</themekt>
+                <themekey>society</themekey>
+            </theme>
+            <place>
+                <placekt>INCITS.38-200x (R2004),INCITS.31-200x (R2007),INCITS.454-200x,INCITS 455-200x,INCITS 446-2008</placekt>
+                <placekey>New Jersey</placekey>
+                <placekey>NJ</placekey>
+                <placekey>United States</placekey>
+                <placekey>USA</placekey>
+            </place>
+        </keywords>
+        <accconst>Other Constraints</accconst>
+        <useconst>This data set is not survey data and must not be used as survey data. The polygons delineated in this data set do not represent legal boundaries. See the balance of this metadata record for conditions that limit appropriate uses. Acknowledgement of the data set provider, NJ Office of Information Technology, Office of GIS (NJOGIS), would be appreciated for maps, data or other products derived from this data set. The State of New Jersey makes great effort to provide secure, accurate, and complete data and metadata. However, portions of the data and metadata may be incorrect or not current. Any errors or omissions should be reported for investigation. The State of New Jersey, its officers, employees or agents shall not be liable for damages or losses of any kind arising out of or in connection with the use or performance of data and metadata, including but not limited to, damages or losses caused by reliance upon the accuracy or timeliness of any such data and metadata, or damages incurred from the viewing, distributing, or copying of those materials. The data and metadata are provided "as is." No warranty of any kind, implied, expressed, or statutory, including but not limited to the warranties of non-infringement of third party rights, title, merchantability, fitness for a particular purpose, and freedom from computer virus, is given with respect to the data and metadata, or its hyperlinks to other Internet resources. The State disclaims any duty or obligation either to maintain availability of or to update the data and metadata.</useconst>
+        <datacred>This release was created for publication by NJ Office of Information Technology, Office of GIS (NJOGIS.) TIGER data and metadata provided by U.S. Department of Commerce, U.S. Census Bureau, Geography Division, Geographic Products Branch. Base boundary data provided by Monmouth County GIS and Burlington County GIS. Tabular attribute data and review assistance provided by NJ Department of Education, Office of School Finance.</datacred>
+        <secinfo>
+            <secsys>ArcGIS</secsys>
+            <secclass>Unclassified</secclass>
+            <sechandl>No special handling required</sechandl>
+        </secinfo>
+    </idinfo>
+    <dataqual>
+        <attracc>
+            <attraccr>Attributes were checked by inspection. They also were cross-checked by spatial join with TIGER district centroids, and by overlay with TIGER districts to check for blunders. District names were cross-checked with current table downloaded from NJDOE website, and most that showed a difference were changed to match the NJDOE table.</attraccr>
+        </attracc>
+        <logic>Most of the spatial data were originally derived by combining municipal boundary polygons from the source feature class Govt_admin_municipal_bnd (formerly nj_munis.) However several municipalities are split among more than one district. See Supplemental Information and Process Steps for details.  
+
+Boundaries have been topologically adjusted to match updated municipal boundaries wherever appropriate, with a 0.01 ft cluster tolerance (US Survey feet) and holding the municipal boundaries fixed. Topology also was tested for no gaps or overlaps within a layer of combined secondary and unified districts, and for co-incidence of secondary district boundaries with elementary district boundaries.  
+
+Remaining topological exceptions are in the base areas, where boundaries are not co-incident with municipal boundaries.</logic>
+        <complete>All NJ public school districts that bear financial responsibility for youngsters in a geographic area are included in the three feature classes. This feature class includes only district boundaries for districts with financial responsibility for all grade K through grade 12.  
+
+The TIGER data has two additional Unified District features, reflecting slightly different methodology for dealing with Joint Base MDL (pseudo-district), and coverage area (includes offshore water.)</complete>
+        <posacc>
+            <horizpa>
+                <horizpar>Municipal boundary data were derived from multiple sources with varying spatial accuracy. Base for their development was 1:2400 nominal scale orthoimagery with 1 ft pixels and accuracy of +/- 4 ft per NSSDA.</horizpar>
+            </horizpa>
+        </posacc>
+        <lineage>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <pubdate>20150815</pubdate>
+                        <title>Public School Districts</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20150815</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>Publication date</srccurr>
+                </srctime>
+                <srccitea>Public School Districts</srccitea>
+                <srccontr>NJ Department of Education 2015 School District directory</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <pubdate>20200410</pubdate>
+                        <title>Municipalities of New Jersey, New Jersey State Plane NAD83</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20210401</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>ground condition</srccurr>
+                </srctime>
+                <srccitea>Municipalities of New Jersey, New Jersey State Plane NAD83</srccitea>
+                <srccontr>High-quality municipal boundaries</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <pubdate>20210119</pubdate>
+                        <title>TIGER/Line Shapefile, 2020, 2020 state, New Jersey, 2020 Census Elementary School District State-based</title>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20210119</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>Download date</srccurr>
+                </srctime>
+                <srccitea>TIGER/Line Shapefile, 2020, 2020 state, New Jersey, 2020 Census Elementary School District State-based</srccitea>
+                <srccontr>U.S Census Bureau TIGER Elementary school district boundaries for purpose of financial responsibility, as of 2019-2020 school year (in operation as of January 1, 2020). Publication date reflects download date from U.S. Census Bureau website.</srccontr>
+            </srcinfo>
+            <procstep>
+                <procdesc>A boundary polygon was created for Joint Base MDL housing residence, based on the Base boundary file provided by Burlington County. This boundary file was provided to Burlington County by the Base Geo-Integration Office (GIO) in 2012, and subsequently adjusted by a Burlington County survey crew. The Base boundary was edited by NJOGIS, using tax parcel data, to include all parcels owned by the Base, or by real estate management entity for Base housing. The latter areas that are not owned by the Base were identified for NJOGIS by school district staff in a meeting in July, 2013.
+
+The resulting Joint Base MDL boundary for use in this project covers parts of North Hanover, New Hanover, Pemberton Township, and Springfield Township, Burlington County. 
+
+Date cited is approximate.</procdesc>
+                <procdate>20150227</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Per comments on draft layers from the Tinton Falls School District a polygon boundary was created for Naval Weapons Station Earle, using a Station boundary polygon layer provided by Monmouth County. It was edited slightly to simplify the main Station area to one polygon, and to align the boundary with parcel boundaries as appropriate. The locations of Station housing were checked via phone call with the school administrator for the Tinton Falls district, Tamar Sydney-Gens, and all are within the simplified polygon.
+
+The resulting Naval Weapons Station Earle boundary for use in this project covers parts of Colts Neck, Tinton Falls, Howell Township, and Wall Township, Monmouth County.
+
+Date cited is approximate.</procdesc>
+                <procdate>20151030</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Additional data were acquired and prepared for processing a new version of school district spatial layers.
+
+TIGER/Line Shapefiles of NJ school districts (Elementary, Secondary, Unified) were downloaded from the U.S. Census Bureau geographic data Web site. 
+
+Centroid points for NJ municipalities were created from NJOGIS municipal boundary feature class Govt_admin_municipal_bnd. The data used were the fall 2015 update published by NJOGIS. The ArcToolbox 10.3.1 Add Geometry Attributes tool was used with the CENTROID_INSIDE option, to add x and y fields for a point within each municipal polygon (or within one part, for multipart polygons). The attributes were then loaded into a table; an event layer created in ArcMap; and a point feature class exported from the event layer.
+
+Draft layers from spring 2015 of Elementary, Secondary, and Unified school districts were also used as source data. Comments on these draft boundaries by local district staff were taken into account. The draft layers included changes from existing TIGER data due to the Joint Base MDL school arrangements.
+
+Date cited is approximate.</procdesc>
+                <procdate>20151109</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NJOGIS</cntorg>
+                            <cntper>Edith Konopka and Yelena Pikovskaya</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing</addrtype>
+                            <address>PO Box 212</address>
+                            <city>Trenton</city>
+                            <state>NJ</state>
+                            <postal>08625-0212</postal>
+                        </cntaddr>
+                        <cntvoice>609-376-7530</cntvoice>
+                        <cntemail>edith.konopka@oit.state.nj.us</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>A series of spatial joins were performed to transfer identifiers from current US Census TIGER school district polygons, and from draft NJOGIS School District polygons created in March, 2015, to municipality centroids. The centroid point attributes were then transferred to the updated municipal boundary polygon data by join on GNIS identifier. Initally three dissolves of the municipal boundaries into districts were performed using the TIGER identifers UNSDLEA, ELSDLEA, and SCSDLEA. The results were somewhat problematic, and difficult to reconcile with tabular data from NJDOE.
+
+The dissolves were redone, using the NJDOE_ID identifer, constructed from county code and district code in the online Public School District directory; these values were available from the previous draft NJ school district data.
+
+Date cited is approximate.</procdesc>
+                <procdate>20151112</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NJ Office of Information Technology, Office of GIS (NJOGIS)</cntorg>
+                            <cntper>Edith Konopka</cntper>
+                        </cntorgp>
+                        <cntpos>GIS Specialist</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing</addrtype>
+                            <address>PO Box 212</address>
+                            <city>Trenton</city>
+                            <state>NJ</state>
+                            <postal>08625-0212</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>609-376-7530</cntvoice>
+                        <cntemail>edith.konopka@oit.nj.gov</cntemail>
+                        <hours>9-4</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>After the final dissolve to produce the three main feature classes, district boundaries in the military base areas were edited.
+
+In the area of Joint Base MDL, for data submitted to the U.S. Census Bureau, the Joint Base MDL polygon was erased out of New Hanover Township (Unified), North Hanover Township School District (Elementary), Pemberton Township Schools (Unified), Northern Burlington County Regional School District (Secondary), and Springfield Township School District (Elementary); and was created as a separate unified pseudo-district. 
+
+For data published by NJOGIS, the Joint Base MDL polygon was merged into North Hanover Township School District (Elementary), Northern Burlington County Regional School District (Secondary), and Pemberton Township Schools (Unified). The Base polygon was erased out of New Hanover Township (Unified) and Springfield Township School District (Elementary). Note that this results in duplicated coverage for each grade.
+
+For NWS Earle in Monmouth County, the Station polygon was merged with Tinton Falls School District (Elementary) and with Monmouth Regional High School District (Secondary). The Station polygon was erased out of Colts Neck Township School District (Elementary), Howell Township Public School District (Elementary), Freehold Regional High School District (Secondary), and Wall Township Public School District (Unified). 
+
+The arrangement for the youngsters in NWS Earle housing is relatively straightforward; they are part of the Tinton Falls School District and Monmouth Regional High School District, even if they live in Colts Neck.No pseudo-district is required.
+
+Date cited is approximate.</procdesc>
+                <procdate>20151130</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NJ Office of Information Technology, Office of GIS (NJOGIS)</cntorg>
+                            <cntper>Edith Konopka</cntper>
+                        </cntorgp>
+                        <cntpos>GIS Specialist</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing</addrtype>
+                            <address>PO Box 212</address>
+                            <city>Trenton</city>
+                            <state>NJ</state>
+                            <postal>08625-0212</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>609-376-7530</cntvoice>
+                        <cntemail>edith.konopka@oit.nj.gov</cntemail>
+                        <hours>9-4</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>A series of QA checks were performed, some geography corrected for merged and un-merged districts, and some attributes added or edited.
+
+Public School District directory table was downloaded from the NJDOE Web site, and edited to remove specialized, non-geographic districts and charter schools, and fields processed to create appropriate IDs. The resulting table, Pub_Dist_Census201511rev, was used to cross-check processed school district data. 
+
+Susan Ecks of NJ DOE provided an additional table of districts cross-tabulated with their corresponding municipalities, originally delivered as "REGIONS_LIST_DISTNAMES.XLSX". This spreadsheet was processed to reformat some fields and to create identifers that would match those in school district layers. This table, as tbl_REGIONAL_LIST_DISTNAMES_EDIT, also was used to cross-check processed school district data. 
+
+District names were assigned by join from the edited school district directory table.
+
+Attribute SDLEA, also used as the National Center for Education Statistics (NCES) ID, was added from two crosswalk tables provided by Susan Ecks of NJDOE. The tables were joined to the districts on NJDOE_ID.
+
+Districts were stepped through one by one to assure that the post-dissolve geography looked reasonable.
+
+The data were reviewed with Frank Lavdas and Susan Ecks of NJDOE, and the correct number of districts are included in the three feature classes (557 total). They corrected some confusion about which districts had merged or not, and which non-operating, sending districts were still in existence.
+
+Crosswalk table was created of all school district - municipality pairs by doing a spatial join of municipal points for each district layer and adding records for the "extra" pairs generated by base geography. The base-related pairs were flagged. The crosswalk table was then filled by loading selected attributes from each of the three joined point layers. The table was compared to tbl_REGIONAL_LIST_DISTNAMES_EDIT by joining on a composite id (NJDOE_ID + gnis) in both directions. Discrepancies were examined for problems.
+
+Date cited is approximate.</procdesc>
+                <procdate>20151208</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NJ Office of Information Technology, Office of GIS (NJOGIS)</cntorg>
+                            <cntper>Edith Konopka</cntper>
+                        </cntorgp>
+                        <cntpos>GIS Specialist</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing</addrtype>
+                            <address>PO Box 212</address>
+                            <city>Trenton</city>
+                            <state>NJ</state>
+                            <postal>08625-0212</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>609-376-7530</cntvoice>
+                        <cntemail>edith.konopka@oit.nj.gov</cntemail>
+                        <hours>9-4</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Spatial data were checked for topology errors. Two sliver areas of gap and overlap were identified along the boundaries the New Hanover district and the Joint Base MDL district. Those errors were corrected.</procdesc>
+                <procdate>20151214</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NJ Office of Information Technology, Office of GIS (NJOGIS)</cntorg>
+                            <cntper>Edith Konopka</cntper>
+                        </cntorgp>
+                        <cntpos>GIS Specialist</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing</addrtype>
+                            <address>PO Box 212</address>
+                            <city>Trenton</city>
+                            <state>NJ</state>
+                            <postal>08625-0212</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>609-376-7530</cntvoice>
+                        <cntemail>edith.konopka@oit.nj.gov</cntemail>
+                        <hours>9-4</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Metadata were written and edited in a format for use with all three main school district layers, using notes made during data development.</procdesc>
+                <procdate>20151215</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Created a new school district 25-5645 - Loch Arbour .The polygon of Ocean Township SD in Monmouth County was exploded and a new polygon of Loch Arbour Village was created as a new Unified School District.</procdesc>
+                <procdate>20170807</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NJ Office of Information Technology, Office of GIS (NJOGIS)</cntorg>
+                            <cntper>Yelena Pikovskaya</cntper>
+                        </cntorgp>
+                        <cntpos>GIS Specialist</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing</addrtype>
+                            <address>PO Box 212</address>
+                            <city>Trenton</city>
+                            <state>NJ</state>
+                            <postal>08625-0212</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>609-376-7580</cntvoice>
+                        <cntemail>yelena.pikovskaya@tech.nj.gov</cntemail>
+                        <hours>9-4</hours>
+                        <cntinst>e-mail is preferred</cntinst>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Elmer Boro SD polygon was merged with Pittsgrove Township SD polygon (Salem County).</procdesc>
+                <procdate>20170808</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NJ Office of Information Technology, Office of GIS (NJOGIS)</cntorg>
+                            <cntper>Yelena Pikovskaya</cntper>
+                        </cntorgp>
+                        <cntpos>GIS Specialist</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing</addrtype>
+                            <address>PO Box 212</address>
+                            <city>Trenton</city>
+                            <state>NJ</state>
+                            <postal>08625-0212</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>609-376-7580</cntvoice>
+                        <cntemail>yelena.pikovskaya@tech.nj.gov</cntemail>
+                        <hours>9-4</hours>
+                        <cntinst>e-mail is preferred</cntinst>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Information about changes since last edits was obtained from NJDOE (Susan Ecks). The following edits were made to reflect changes and to correct errors:  
+- The NWS Earle area was removed from the Tinton Falls elementary district and added to the Colts Neck elementary district.  
+-  A small area on the western end of JBMDL was removed from the Springfield (Burlington County) elementary district.  
+-  A topology was created requiring boundaries to be covered by municipal boundary, with 0.01 ft tolerance. The topology was validated and all errors were inspected. Boundaries were moved to match municipal boundary (most), or marked as exceptions (base areas) until all errors were resolved. Similar testing and correction were done for no gaps or overlaps in a combined layer of secondary and unified districts, and for co-incidence of secondary district boundaries with elementary district boundaries.  
+
+Metadata record was updated.</procdesc>
+                <procdate>20210412</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NJ Office of Information Technology, Office of GIS (NJOGIS)</cntorg>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>mailing</addrtype>
+                            <address>PO Box 212</address>
+                            <city>Trenton</city>
+                            <state>NJ</state>
+                            <postal>08625-0212</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>use email</cntvoice>
+                        <cntemail>njgin@oit.nj.gov</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+        </lineage>
+    </dataqual>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>GT-polygon composed of chains</sdtstype>
+                <ptvctcnt>340</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>Govt_admin_schdis_u</enttypl>
+                <enttypd>Unified School District, financial responsibilty</enttypd>
+                <enttypds>U.S. Census Bureau</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>Coordinates defining the features.</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>NJDOE_ID_U</attrlabl>
+                <attrdef>NJ Department of Education district ID value.</attrdef>
+                <attrdefs>NJ Department of Education</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <codesetd>
+                                                						
+                        
+                        <codesetn>New Jersey Public School District Directory</codesetn>
+                                                						
+                        
+                        <codesets>NJ Department of Education:  https://education.state.nj.us/directory/districtDL.php</codesets>
+                                                					
+                    
+                    </codesetd>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>DIST_NAME</attrlabl>
+                <attrdef>District Name</attrdef>
+                <attrdefs>NJOGIS</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <codesetd>
+                                                						
+                        
+                        <codesetn>New Jersey Public School District Directory</codesetn>
+                                                						
+                        
+                        <codesets>NJ Department of Education:  https://education.state.nj.us/directory/districtDL.php</codesets>
+                                                					
+                    
+                    </codesetd>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>UNSDLEA</attrlabl>
+                <attrdef>School District Local Education Agency Code, also used as NCES identifier.</attrdef>
+                <attrdefs>USCB, School District Review Program, Attachment F: Data Dictionary/Record Layout for School District Listings, 2011-2012</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>Codes were provided by Susan Ecks of NJDOE, Office of School Finance.</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Shape_Area</attrlabl>
+                <attrdef>Area of feature in internal units squared.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>Positive real numbers that are automatically generated.</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>GEOID</attrlabl>
+                <attrdef>Unique values and join field for Census data, number as text</attrdef>
+                <attrdefs>NJOGIS</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>Concatenation of State FIPS code and School District Local Education Agency Code</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Shape_Length</attrlabl>
+                <attrdef>Length of feature in internal units.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <udom>Positive real numbers that are automatically generated.</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SD_TYPE</attrlabl>
+                <attrdef>School district type per financial responsibility</attrdef>
+                <attrdefs>NJDOE; NJOGIS</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>U</edomv>
+                                                						
+                        
+                        <edomvd>Unified; grades K through 12</edomvd>
+                                                						
+                        
+                        <edomvds>NJDOE</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+        </detailed>
+    </eainfo>
+    <distinfo>
+        <distrib>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>NJ Office of Information Technology, Office of GIS (NJOGIS)</cntorg>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing</addrtype>
+                    <address>PO Box 212</address>
+                    <city>Trenton</city>
+                    <state>NJ</state>
+                    <postal>08625-0212</postal>
+                </cntaddr>
+                <cntvoice>use email</cntvoice>
+                <cntemail>njgin@oit.nj.gov</cntemail>
+            </cntinfo>
+        </distrib>
+        <distliab>See Use Limitation (Use Constraints)</distliab>
+        <stdorder>
+            <digform>
+                <digtinfo>
+                    <formname>Esri map service layer; ArcREST</formname>
+                    <formvern>10.7.1</formvern>
+                    <formspec>https://developers.arcgis.com/rest/services-reference/get-started-with-the-services-directory.htm</formspec>
+                    <formcont>Single-layer georeferenced map image and query</formcont>
+                </digtinfo>
+                <digtopt>
+                    <onlinopt>
+                        <computer>
+                            <networka>
+                                <networkr>https://maps.nj.gov/arcgis/rest/services/Framework/SchoolDistricts/MapServer/2</networkr>
+                            </networka>
+                        </computer>
+                    </onlinopt>
+                </digtopt>
+            </digform>
+            <fees>0.00</fees>
+            <ordering>Live access via REST endpoint, or download zipped shapefile from NJGIN Open Data (HUB) website.</ordering>
+        </stdorder>
+    </distinfo>
+    <metainfo>
+        <metd>20210413</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>NJ Office of Information Technology, Office of GIS (NJOGIS)</cntorg>
+                    <cntper>Edith Konopka, Ph.D., GISP</cntper>
+                </cntorgp>
+                <cntpos>Spatial Database Manager</cntpos>
+                <cntaddr>
+                    <addrtype>mailing</addrtype>
+                    <address>PO Box 212</address>
+                    <city>Trenton</city>
+                    <state>NJ</state>
+                    <postal>08625-0212</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>609-376-7530</cntvoice>
+                <cntemail>edith.konopka@tech.nj.gov</cntemail>
+                <hours>9-4</hours>
+                <cntinst>Email is preferred.</cntinst>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+        <metsi>
+            <metscs>ArcGIS</metscs>
+            <metsc>Unclassified</metsc>
+            <metshd>No special handling required</metshd>
+        </metsi>
+    </metainfo>
+</metadata>
