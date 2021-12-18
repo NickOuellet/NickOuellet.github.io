@@ -13981,75 +13981,32 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Investigating-K-12-Academic-Performance-Based-on-District-Data">Investigating K-12 Academic Performance Based on District Data<a class="anchor-link" href="#Investigating-K-12-Academic-Performance-Based-on-District-Data">&#182;</a></h1>
+<h1 id="Investigating-K-12-Academic-Performance-in-Louisiana-and-New-Jersey">Investigating K-12 Academic Performance in Louisiana and New Jersey<a class="anchor-link" href="#Investigating-K-12-Academic-Performance-in-Louisiana-and-New-Jersey">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Project-Goals">Project Goals<a class="anchor-link" href="#Project-Goals">&#182;</a></h2><p>The team, <strong>Nick Ouellet and Garrett Gilliom</strong>, will be investigating data sets related to public school districts that measure student, faculty, and staff demographics, school district academic performance and finances, and more. So far, the team has come across two data sets for Louisiana school districts and many more for New Jersey school districts. Collectively, the data measures different variables and attributes of each state's school districts across the same year; the data are also well-populated and taken from each state's Department of Education, which is a reputable source.</p>
+<h2 id="Project-Goals">Project Goals<a class="anchor-link" href="#Project-Goals">&#182;</a></h2><p>The team, <strong>Nick Ouellet and Garrett Gilliom</strong>, will be investigating data sets related to public school districts that measure student, faculty, and staff demographics, school district academic performance and finances, and more. So far, the team has come across two education-based data sets for Louisiana's parishes* and many more for New Jersey school districts. Collectively, the data measures different variables and attributes of each state's school districts across the same year; the data are also well-populated and taken from each state's Department of Education, which is a reputable source.</p>
 <p>The following tutorial will consider and investigate the following questions:</p>
 <ul>
-<li><strong>Louisiana is consistently ranked as a low-performing state, education-wise. What differences exist between Louisiana and other high-performing states that may highlight why Louisiana is ranked as such?</strong></li>
-<li><strong>Can data from one or a small group of states allow for the prediction of academic performance of other states' school districts?</strong></li>
+<li><strong>Louisiana is consistently ranked as a low-performing state, education-wise. What differences exist between Louisiana and other high-performing states that may highlight why Louisiana is ranked as such?</strong>
+<br><br></li>
+<li><strong>Can data from one or a small group of states allow for the prediction of academic performance of other states' school districts?</strong>
+<br><br></li>
 <li><strong>What relationships exist between variables of financial, or otherwise demographic, data and the academic performance of school districts?</strong> <br>For example:<ul>
 <li>Does a correlation exist between the size of a school and its graduation rate or other academic performance metric?</li>
 <li>Is overall funding of or spending by a school district at all indicative of its academic performance?</li>
-<li>Which areas of financial investment are most effective at promoting successful test scores? For example, does allocating money to extracurriculars like sports aid or hinder testing scores or graduation rates?</li>
+<li>Which areas of financial investment are most effective at promoting successful test scores? For example, does allocating money to extracurriculars like sports aid or hinder testing scores or graduation rates?
+<br><br></li>
 </ul>
 </li>
-<li><strong>What measurable features do the academic performance metrics of school districts depend on, if any?</strong></li>
+<li><strong>What measurable features do the academic performance metrics of school districts depend on, if any?</strong>
+<br><br>
+<strong>*</strong> It should be noted that the term "school districts" will be substituted for Louisiana's "parishes" throughout this tutorial. The team recognizes the difference but opted to make this substitution after considering how the majority of parishes directly correspond to a school district throughout the state. There are <a href="https://www.louisianabelieves.com/schools/public-schools#:~:text=Louisiana%20has%201303%20public%20schools%20in%2070%20school%20districts.">70 school districts</a> and <a href="https://www.louisiana.gov/local-louisiana/#:~:text=The%20state%20of%20Louisiana%20is,being%20used%20within%20the%20parishes.">64 parishes</a> across the state – a small difference in the grand scheme of this analysis and future analyses of similar data.</li>
 </ul>
 <h3 id="Collaboration-Plan">Collaboration Plan<a class="anchor-link" href="#Collaboration-Plan">&#182;</a></h3><p>The team plans to meet once a week to work on this project to finalize our project vision, determine objectives, and assist each other where necessary. We will also be communicating thoroughly over text messages to keep each other updated with task progress and will be using Google Docs to keep an ongoing list of to-do items that’s accessible by each of us at all times. The team has also set up a shared Github repository to store, coordinate, and update our code.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[71]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install scikit-learn<span class="o">==</span><span class="m">1</span>.0.1
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>/Users/garrettgilliom/.zshenv:15: unmatched &#34;
-Collecting scikit-learn==1.0.1
-  Downloading scikit_learn-1.0.1-cp38-cp38-macosx_10_13_x86_64.whl (7.9 MB)
-     |████████████████████████████████| 7.9 MB 2.6 MB/s            
-Requirement already satisfied: numpy&gt;=1.14.6 in /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages (from scikit-learn==1.0.1) (1.21.2)
-Requirement already satisfied: joblib&gt;=0.11 in /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages (from scikit-learn==1.0.1) (1.1.0)
-Requirement already satisfied: scipy&gt;=1.1.0 in /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages (from scikit-learn==1.0.1) (1.7.1)
-Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages (from scikit-learn==1.0.1) (3.0.0)
-Installing collected packages: scikit-learn
-  Attempting uninstall: scikit-learn
-    Found existing installation: scikit-learn 1.0
-    Uninstalling scikit-learn-1.0:
-      Successfully uninstalled scikit-learn-1.0
-Successfully installed scikit-learn-1.0.1
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -17634,7 +17591,10 @@ It should be noted that the presence of school districts that are so over or und
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="The-Final-Model:-Predicting-Louisiana-Graduation-Rates">The Final Model: Predicting Louisiana Graduation Rates<a class="anchor-link" href="#The-Final-Model:-Predicting-Louisiana-Graduation-Rates">&#182;</a></h2>
+<h2 id="The-Final-Model:-Predicting-Louisiana-Graduation-Rates">The Final Model: Predicting Louisiana Graduation Rates<a class="anchor-link" href="#The-Final-Model:-Predicting-Louisiana-Graduation-Rates">&#182;</a></h2><p>To test the reliability of the relationships between the investigated school district features, the team will create a regression model based on scikit-learn's K-Nearest Neighbors regressor. This model will be trained on the New Jersey data and will predict the graduation rate of Louisiana school districts based on their input features.
+<br><br>
+If the model was accurate, meaning that a relationship exists between the feature variables in both data sets, then the team would expect the predicted graduation rates for Louisiana to closely resemble their true graduation rates. If the model was accurate and the predicted labels for Louisiana were off, the existence of some other unmeasured feature or factor that's influencing the real-world graduation rates is possible or even likely. However, because the team observed little evidence for a relationship between the variables measured, an inaccurate prediction is expected.</p>
+
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
@@ -17718,7 +17678,7 @@ It should be noted that the presence of school districts that are so over or und
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
@@ -17763,150 +17723,6 @@ It should be noted that the presence of school districts that are so over or und
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/base.py:441: UserWarning: X does not have valid feature names, but KNeighborsRegressor was fitted with feature names
-  warnings.warn(
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -17960,7 +17776,8 @@ It should be noted that the presence of school districts that are so over or und
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Now that we know that these factors are not all that affects graduation rates, it raises the question: which factors do? Let us plot parish/districts along with thier graduation rates to see if there are any paterns that emerge.</p>
+<p>The above bar chart illustrates the model's graduation rate of each Louisiana school district, which is consistently lower than each district's actual graduation rate. The team expected the predicted labels to be off but was surprised by the consistency in the model's error, considering how the previously shown scatter plots illustrated that New Jersey school district graduation rates varied across schools of differing financial and enrollment features.</p>
+<p>Now that it has been shown that these measured features are not all that affects graduation rates, the following question is raised: which factors do have an influence? Let's plot each parish, along with thier graduation rates, to see if any paterns emerge.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -18068,14 +17885,18 @@ It should be noted that the presence of school districts that are so over or und
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Even though some data are missing in Louisiana (in white), with the data that is represented there does not seem to be any relation between graduation rate and location. Future exploration could focus on the search for the factors that are most influencial to a child's education.</p>
+<p>Even though some data are missing in Louisiana (in white), with the data that is represented there does not seem to be any relation between graduation rate and location.
+<br><br>
+This is just one example of another method of searching for variables and features related to academic performance. Future exploration and data analysis could focus on the search for the factors that are most influencial to the quality or success of K-12 education within school districts.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
-<h2 id="Closing-Thoughts-and-Future-Goals:">Closing Thoughts and Future Goals:<a class="anchor-link" href="#Closing-Thoughts-and-Future-Goals:">&#182;</a></h2><p>The team found little evidence for a correlation between the funding or spending of school districts and academic performance for the school districts within Louisiana and New Jersey. This was surprising, as the team expected to find that school districts with the higher funding or spending to yield higher academic performance results. This lack of evidence was found even, and possibly more importantly, when considering revenue per pupil, which takes both enrollment size and financial information into account and gives a semblance of standardization across each states' districts. While strange, this information could be used to pinpoint school districts that may be collecting a strong amount of money, only to spend it in an irresponsible way. More investigation could be further completed to determine why school districts with high funding amounts are underperforming and how school districts with low funding levels are performing well in both states.</p>
+<h2 id="Closing-Thoughts-and-Future-Goals:">Closing Thoughts and Future Goals:<a class="anchor-link" href="#Closing-Thoughts-and-Future-Goals:">&#182;</a></h2><p>The team found little evidence for a correlation between the funding or spending of school districts and academic performance for the school districts within Louisiana and New Jersey. This was surprising, as the team expected to find that school districts with the higher funding or spending to yield higher academic performance results. This lack of evidence was found even, and possibly more importantly, when considering revenue per pupil, which takes both enrollment size and financial information into account and adds a layer of standardization across each states' districts. Although strange, this information could be used to pinpoint school districts that may be collecting great amount of money, only to spend it in an irresponsible way.
+<br><br>
+More investigations should be completed to determine why school districts with high funding amounts are underperforming and how school districts with low funding levels are performing well in both states. Furthermore, the lack of a found relationship between variables that were expected to correlate may suggest that other factors beyond the financial, enrollment, and performance metrics used here contribute to the difference in education standards and quality between the two states. Further research on the variables investigated here, as well as others, is recommended.</p>
 <p>As a result of this exploratory data analysis completed on data sets relating to financial information and academic performance of both New Jersey and Louisiana school districts, the team has deteremined <strong>new questions and considerations</strong> to be used in future analyses:</p>
 <h3 id="Validity-of-data-and-results">Validity of data and results<a class="anchor-link" href="#Validity-of-data-and-results">&#182;</a></h3><ul>
 <li><strong>Do the data of school districts of other states align with that of New Jersey and Louisiana? In other words, would the same conclusions observations be made about the data if similar analyses were performed on other states?</strong><ul>
@@ -18106,7 +17927,7 @@ It should be noted that the presence of school districts that are so over or und
 <li><strong>What other factors, beyond financial and enrollment data, may contribute to the overall academic performance metrics of school districts?</strong>
 <br><br></li>
 <li><strong>What other tangible metrics exist to accurately measure academic performance of school districts?</strong><ul>
-<li>Are any of them equitable or fair?
+<li>Are any of them equitable or fair that account for forms of discrimination across the U.S.?
 <br><br></li>
 </ul>
 </li>
@@ -18117,57 +17938,6 @@ It should be noted that the presence of school districts that are so over or und
 <p>It's vital that future investigations are completed to test new features of school districts in search for relevant relationships. If found, the relationships present may lead to projects or initiatives by policymakers that are focused on improving education standards based on discrepancies found within under-performing school districts. If none are continued to be found, it's possible that factors outside of school district-specific data are influencing the differing levels of academic performance across communities. The team's results showed little relationship between the features overall despite the expectation of a relationship to be found. To validate the team's results, more analysis or other investigations should be completed in the future. &lt;/br&gt; &lt;/br&gt;</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert --to html Final_Tutorial.ipynb 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>/Users/garrettgilliom/.zshenv:15: unmatched &#34;
-[NbConvertApp] Converting notebook Final_Tutorial.ipynb to html
-[NbConvertApp] Writing 1487376 bytes to Final_Tutorial.html
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 </body>
 
